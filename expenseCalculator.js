@@ -72,7 +72,42 @@ function calculateTax(){
            
           else if(status == 1) {
                 //INSERT YOUR CODE BELOW
-  
+                  if (income <= 18550){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 75300) {
+                 tax = 18550 * 0.10 + (income - 18550) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 182300) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 + (income - 75300) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 380300) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                       (182300 - 75300) * 0.25 + (income - 182300) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 826700) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                       (182300 - 75300) * 0.25 + (380300 - 182300) * 0.28 +
+                       (income - 380300) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 830100) {
+                  tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                        (182300 - 75300) * 0.25 + (380300 - 182300) * 0.28 +
+                        (826700 - 380300) * 0.33 + (income - 413350) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                        (182300 - 75300) * 0.25 + (380300 - 182300) * 0.28 +
+                        (826700 - 380300) * 0.33 + (415050 - 826700 ) * 0.35 + (income - 830100) * .396;
+                  taxRate = 39.6;
+               }//end of nested if
+             
   
   
   
@@ -93,6 +128,41 @@ function calculateTax(){
                  
           else if(status == 2) {
                 //INSERT YOUR CODE BELOW
+                     if (income <= 9275){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 28375) {
+                 tax = 9275 * 0.10 + (income - 9275) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 38300) {
+                 tax = 9275 * 0.10 + (28375 - 9275) * 0.15 + (income - 28375) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 39775) {
+                 tax = 9275 * 0.10 + (28375 - 9275) * 0.15 +
+                       (38300 - 37650) * 0.25 + (income - 38300) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 90950) {
+                 tax = 9275 * 0.10 + (28375 - 9275) * 0.15 +
+                       (38300 - 37650) * 0.25 + (39775 - 38300) * 0.28 +
+                       (income - 39775) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 140400) {
+                  tax = 9275 * 0.10 + (28375 - 9275) * 0.15 +
+                        (38300 - 37650) * 0.25 + (39775 - 38300) * 0.28 +
+                        (90950 - 39775) * 0.33 + (income - 90950) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 9275 * 0.10 + (28375 - 9275) * 0.15 +
+                        (38300 - 37650) * 0.25 + (39775 - 38300) * 0.28 +
+                        (90950 - 39775) * 0.33 + ( 140400- 90950 ) * 0.35 + (income - 415050) * .396;
+                  taxRate = 39.6;
+               }
 
              
              
@@ -114,7 +184,43 @@ function calculateTax(){
           
           else if(status == 3) {
                 //INSERT YOUR CODE BELOW
- 
+          if (income <= 13250){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 37150) {
+                 tax = 13250 * 0.10 + (income - 13250) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 38300) {
+                 tax = 13250 * 0.10 + (37150 - 13250) * 0.15 + (income - 37150) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 79775) {
+                 tax = 13250 * 0.10 + (37150 - 13250) * 0.15 +
+                       (38300 - 37650) * 0.25 + (income - 38300) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 80950) {
+                 tax = 13250 * 0.10 + (37150 - 13250) * 0.15 +
+                       (38300 - 37650) * 0.25 + (79775 - 38300) * 0.28 +
+                       (income - 79775) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 150500) {
+                  tax = 13250 * 0.10 + (37150 - 13250) * 0.15 +
+                        (38300 - 37650) * 0.25 + (79775 - 38300) * 0.28 +
+                        (80950 - 79775) * 0.33 + (income - 80950) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 13250 * 0.10 + (37150 - 13250) * 0.15 +
+                        (38300 - 37650) * 0.25 + (39775 - 38300) * 0.28 +
+                        (80950 - 79775) * 0.33 + ( 150400- 80950 ) * 0.35 + (income - 150500) * .396;
+                  taxRate = 39.6;
+               }
+
+             
  
 
              
@@ -175,7 +281,9 @@ function clearButton () {
               
              //INSERT YOUR CODE BELOW
 
-
+            <fieldset id="calculatebutton">
+                  <button type="reset" onclick="clearForm()"> Clear Calculator </button>
+                </fieldset> 
 
 
 }//end of clearButton function
